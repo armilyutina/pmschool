@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+  {%  block content %}
+	<!-- Подключила React -->
+	<script type="text/babel"  src="{% static 'main/js/be.js' %}"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+	 <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+
+
+
+	<div class="main">
+		<img src="{% static 'main/images/Na_Fon1.png'%}">
+	</div>
+
+		<br />
+		<br />
+		<a href ="{% url 'news' %}" class="title news_title">Новости</a>
+		<a href="{% url 'news' %}" class="chevron"><img src="{% static 'main/images/ios7-arrow-thin-right_icon-icons.com_50346.png' %}"></a>
+		<br />
+		<br />
+		<br />
+
+	<div class="block_news_item">
+		<div class="event">
+			{% for post in posts %}
+
+			<div class="fa_1">
+
+				<a href="/news/{{post.id}}"><img src="{{post.img.url}}"></a>
+				<p class="undertitle"><a href="/news/{{post.id}}">{{post.title}}</a></p>
+
+			</div>
+
+			{% endfor %}
+
+	</div>
+</div>
+
+
+ 	<div class="title gallery_title">
+		Галерея
+	</div>
+
+	<div  id='gallery' class="gallery">
+
+		<div class="praongallery">
+		<div class="praon22span7">
+			<div class="praon38prev"></div>
+				<div class="praon28"><img src="{% static 'main/images/2.jpg'%}"></div>
+			<div class="praon39next"></div>
+		</div>
+			<div class="praon23span5">
+			<div class="praon29">
+				<div class="praon30"><img src="{% static 'main/images/01.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/02.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/03.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/05.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/07.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/09.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/11.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/13.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/14.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/23.jpg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/24.jpeg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/25.jpg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/26.jpg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/27.jpg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/28.jpg'%}" /></div>
+				<div class="praon30"><img src="{% static 'main/images/29.jpg'%}" /></div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+    $('.praongallery').each(function(a) { 
+        $(this).find('.praon28 img').attr({'src': $(this).find('.praon30:eq(0) img').attr('src'), "datahomesliders": '0'});
+    });
+    $('.praongallery .praon39next').click(function(){ 
+        var nowimg = parseInt($(this).closest('.praongallery').find('.praon28 img').attr('datahomesliders')) + 1; 
+            if(!$(this).closest('.praongallery').find('.praon30:eq(' + nowimg + ')').length > 0) {nowimg = 0; }
+        $(this).closest('.praongallery').find('.praon28 img').attr({'src': $(this).closest('.praongallery').find('.praon30:eq(' + nowimg + ')').find('img').attr('src'), "datahomesliders": nowimg}); 
+    });
+    $('.praongallery .praon38prev').click(function() { 
+        var nowimg = parseInt($(this).closest('.praongallery').find('.praon28 img').attr('datahomesliders')) - 1; 
+        if(nowimg < 0) {nowimg = parseInt($(this).closest('.praongallery').find('.praon30').length) - 1; 
+    } 
+    $(this).closest('.praongallery').find('.praon28 img').attr({'src': $(this).closest('.praongallery').find('.praon30:eq(' + nowimg + ')').find('img').attr('src'), "datahomesliders": nowimg}); 
+    });
+    $('.praongallery .praon30').click(function() {
+     $(this).closest('.praongallery').find('.praon28 img').attr({'src': $(this).find('img').attr('src'), "datahomesliders": $(this).index()});
+ });
+});
+
+	</script>
+
+		
+
+ 	<div class="title contacts_title">
+		Контакты
+	</div>
+
+ 	<div class="block contact">
+ 		<div class="casting">
+					
+					<div class="contacts">
+						<p class="sp"><span>Почтовый адрес школы:</span> &nbsp; &nbsp;&nbsp;&nbsp;<a href='https://yandex.ru/maps/213/moscow/?ll=37.504454%2C55.810745&mode=whatshere&source=wizgeo&utm_medium=maps-desktop&utm_source=serp&whatshere%5Bpoint%5D=37.498770%2C55.811145&whatshere%5Bzoom%5D=17&z=16.4'>Волоколамское шоссе, д. 4Ac1, г. Москва, 125993</a></p><br />
+		
+						<p class="sp"><span>Часы работы:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;с 18:30 до 21:30</a></p><br />
+
+						<p class="sp"><span>Телефон:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:84991584596">8-(499)-158-4596</a></p><br />
+
+						<p class="sp"><span>Адрес электронной почты:</span>&nbsp;&nbsp;<a href="mailto:fmsmai2020@gmail.com?subject=Вопросы о ФМШ">fmsmai2020@gmail.com</a></p><br />
+						<p class="sp"><span>Официальные сообщества:</span>&nbsp;&nbsp;<img src="{% static 'main/images/VK.png' %}" id="imgsn"><a href="https://vk.com/fmshmai">&nbsp;&nbsp;Вконтакте</a>
+							&nbsp;&nbsp;&nbsp;&nbsp;<img src="{% static 'main/images/IG.png' %}" id="imgsn"><a href="https://www.instagram.com/physicsmathsschool_mai/?igshid=jzkiov8fuk1h">&nbsp;&nbsp;Инстаграм</a></p><br />
+					</div>
+		</div>
+
+</div>
+	<br>
+	<div class="title form_title">
+		Подай заявку уже сейчас!
+	</div>
+
+	<div id = "form" class="form">
+ 	
+ 	</div>
+
+
+{% endblock %}

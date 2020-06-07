@@ -1,0 +1,15 @@
+ {% extends "base.html" %}
+	{% load static %}
+		{% block content %}
+
+			<div>
+				<div class="body">
+					<h2 class="title">{{ post.title|safe }}</h2>
+					<p class="title_to">Опубликовано: {{post.date|date:"d-m-Y в H:i"}}</p>
+					<br />
+					<div class="img_position"><img src="{{post.img.url}}"></div>
+					<p class="text_position">{{ post.text|safe }}</p>
+				</div>
+			</div>
+		{% endblock %}
+

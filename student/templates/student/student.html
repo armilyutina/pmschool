@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+  {%  block content %}
+	<p class="title" id="timetable">Расписание занятий</p>
+  	
+  	<section class="timetable">
+  		<img src="{% static 'main/images/timetable.jpeg' %}">
+  	</section>
+
+
+
+
+  	<p class="title" id="ad">Объявления</p>
+  			
+ 	<section>
+ 		{% for ad in object_list %}
+
+	 	
+  		<div class="artical_content_ad">
+						<div class="artical_ad">
+								
+								<div id="d">{{ad.date|date:"d"}}</div>
+								<div id="underdate">{{ad.date|date:"m-Y"}}</div>
+								<div id="underdate">{{ad.date|date:"h:i:s"}}</div>
+								
+						</div>
+
+						<div id="text">{{ad.text}}</div>
+		</div>
+ 		{% endfor %}
+ 	</section>
+
+
+
+
+  {% endblock %}

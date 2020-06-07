@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+  {%  block content %}
+
+
+  			<p class="title">Новости и события</p>
+  			{% for post in posts %}
+
+  			<div class="artical_content">
+						<div class="artical_photo">
+								
+								<img src="{{post.img.url}}">
+							
+						</div>
+
+						<div class="body_news">
+									<a href="/news/{{post.id}}" class="bodynews_title">
+											<h3>
+												{{post.title|safe}}
+											</h3>
+									</a>
+								<div class="post_slug">{{post.slug|safe}}</div>
+								<h6 id = "date_published">{{post.date|date:"d-m-Y"}}</h6>
+						</div>
+			</div>
+			
+
+
+		{%endfor%}
+	{% include '../pagination.html' with page=posts %} 
+ {% endblock %}

@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% load static %}
+  {%  block content %}
+
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
+    <!-- Загрузка нашего компонента React. -->
+    <script type="text/babel"   src="{% static 'main/js/be.js' %}"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  
+  <div class="doc">
+  	<div class="title">
+  		Информация для поступающих
+  	</div>
+  	<div class="text_content">
+      Для поступления неободимо сдать письменные экзамены по <span id = "cls">физике</span> и <span id = "cls">математике</span>. Уровень сложности задач в вариантах вступительных экзаменов соответствует школьной  программе. Каждая правильно решенная задача оценивается одним баллом. Таким образом обеспечивается возможность поступления в ФМШ учащихся из обычных школ, а не только школ с углубленным изучением физики и математики.
+      Зачисленние в школу проводится на конкурсной основе по результатам вступительных экзамeнов. Для поступления в ФМШ МАИ достаточно решить чуть больше половины задач по физике и математики из числа предлагаемых на экзамене. 
+      После экзаменов проходит аппеляция, учащимся предоставляется возможность ознакомиться со своей работой, получить комментарии к поставленной оценке, а также указания к решению задач.
+      Вступительные экзамены проводятся <span id = "cls">два раза в год: весной и осенью</span>. <p>Примеры вступительных испытаний прошлых лет  для поступления в <a href="https://drive.google.com/open?id=1q73tdxC376fXTo5Nfm5hjyRwnnPpiJ1n" id="cls" >10 класс</a>, в <a href="https://drive.google.com/open?id=1Ci-FY8LQn7PGCdG-Dd8qXh2JUV4Kydg1" id="cls" >11 класс</a>.
+      На экзамене необходимо иметь с собой:</p>
+      <div class="grid">
+    	  <p><span class = "grid_span">1</span><img src="{%static 'main/images/enter.png' %}" class="grid-photo"> &nbsp;&nbsp;&nbsp;&nbsp;4 фотографии размером 4*6</p>
+    		<p><span class = "grid_span">2</span><img src="{%static 'main/images/doc.png' %}" class="grid-photo">&nbsp;&nbsp;&nbsp;&nbsp;справка из школы с печатью</p>
+
+      </div>
+  	</div>
+  </div>
+
+  <div class="title">
+  		Подай заявку уже сейчас!
+  	</div>
+  	<div class="form" id="form">
+    
+ 	</div>
+
+
+
+  {% endblock %}

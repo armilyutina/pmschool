@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+  {%  block content %}
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  
+    <!-- Загрузка нашего компонента React. -->
+    <script type="text/babel"   src="{% static 'main/js/be.js' %}"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  	<script type="text/babel"  src="{% static 'main/js/direction.js' %}"></script>
+  	
+
+  	<div id="direction" class="direction">
+  		
+  	</div>
+
+    <div id="directionResult">
+      
+    </div>
+    
+  {% endblock %}
