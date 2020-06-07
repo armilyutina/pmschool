@@ -11,5 +11,5 @@ urlpatterns = [
     path('<pk>', DetailView.as_view(model = Post, template_name = 'news/artical.html')),
 ]
 
-if settings.DEBUG: # new
+if True:#settings.DEBUG: # new
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
