@@ -1,1 +1,1 @@
-web: gunicorn phschool.wsgi --log-file -
+web: gunicorn phmschool.wsgi --log-file -
