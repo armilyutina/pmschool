@@ -8,7 +8,7 @@ import copy
 import operator
 
 
-@csrf_protect
+@csrf_exempt
 # Create your views here.
 def direction(request):
 	if request.method == 'GET':
