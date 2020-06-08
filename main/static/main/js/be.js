@@ -63,7 +63,7 @@ class Form extends React.Component {
 		 		</input><br />
 		 		<input   id='drt' type="tel" name = "phoneNumber" value = {phoneNumber}
 		 			onChange={this.handlerChange} className="phoneNumber"
-		 			placeholder="+7-000-000-0000" pattern="+7-9[0-9]{2}-[0-9]{3}-[0-9]{4}" maxLength="11">
+		 			placeholder="+7-000-000-0000"  maxLength="11">
 		 		</input><br />
 		 		<input id='drt' type="text" className="school" name = "school"  value = {school}
 		 			onChange={this.handlerChange} placeholder = "Школа">
