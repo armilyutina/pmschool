@@ -3,9 +3,9 @@ import json
 from .forms import EmailPostForms
 from django.core.mail import send_mail
 from django.conf import settings
-from django.views.decorators.csrf import csrf_protect
+from django.views.decorators.csrf import csrf_exempt,csrf_protect
 
-@csrf_protect
+@csrf_exempt
 def enter(request):
     if request.method == 'GET':
         return render(request, 'enter/enter.html')
