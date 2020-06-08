@@ -32,7 +32,6 @@ class Form extends React.Component {
 			method: 'POST',
 		})
 		.then(function (response) {
-			console.log(response);
 			if (response.status === 200) {
 				alert('Данные успешно отправлены!');
 			} else {
