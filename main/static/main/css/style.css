@@ -1152,13 +1152,13 @@ dl {
 
 	.contacts  p > span{
 		font-weight: bolder;
-		font-size: 15px;
+		font-size: 20px;
 		text-align: justify;
 	}
 
 	.contacts{
 		line-height: 20px;
-		font-size: 16px;
+		font-size: 19px;
 	}
 
 	.form{
