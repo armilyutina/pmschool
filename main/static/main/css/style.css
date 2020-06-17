@@ -1152,13 +1152,13 @@ dl {
 
 	.contacts  p > span{
 		font-weight: bolder;
-		font-size: 18px;
+		font-size: 15px;
 		text-align: justify;
 	}
 
 	.contacts{
 		line-height: 20px;
-		font-size: 19px;
+		font-size: 16px;
 	}
 
 	.form{
@@ -1201,7 +1201,7 @@ dl {
 	.section_1{
 		margin:1% 5%;
 		display: grid;
-		grid-template-rows: 260px 300px 305px;
+		grid-template-rows: auto auto auto;
 		grid-template-columns: 100%;
 		grid-gap: 10px 20px;
 		font-size: 14px;
@@ -1578,7 +1578,8 @@ dl {
 		font-size: 16px;
 		font-weight: 300;
 		padding: 0; 
-		margin-left: 5%;
+		margin: 0 5%;
+		width: 100%;
 		justify-content: center;
 	}
 
