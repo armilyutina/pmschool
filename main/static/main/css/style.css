@@ -804,6 +804,10 @@ dl {
 }
 
 
+.slider__item_text{
+	height: auto;
+}
+
 
 .praongallery{
 	margin: 1% 19%;
