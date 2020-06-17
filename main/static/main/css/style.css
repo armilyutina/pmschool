@@ -769,7 +769,7 @@ dl {
 }
 
 .slider__item {
-	min-height: 405px;
+	min-height: 490px;
 	overflow: hidden;
 	position: relative;
 }
@@ -1515,7 +1515,7 @@ dl {
 	}
 
 	.slider__item {
-		height: 220px;
+		height: 290px;
 	}
 
 	.slider__item_inner {
@@ -1548,7 +1548,7 @@ dl {
 	}
 
 	.slider__item_text, .slider__item_post{
-		
+		font-size: 15px;
 	}
 
 	.slider__control {
