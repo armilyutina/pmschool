@@ -133,7 +133,7 @@ ul ul li a{
 
 
 #drt > li{
-	padding-left: 5%;
+	padding-left: 5%; 
 
 }
 
@@ -205,7 +205,7 @@ ul ul li a{
 	font-weight: bold;
 	text-transform: uppercase;
 	grid-gap: 5% 10%;
-
+	
 
 }
 
@@ -247,7 +247,7 @@ ul ul li a{
 }
 
 .casting{
-	text-align: justify;
+	text-align: justify;  
 }
 
 #imgsn{
@@ -482,7 +482,7 @@ a{
 	float: right;
 	height: 250px;
 	display: inline-block;
-
+	
 
 }
 
@@ -503,7 +503,7 @@ a{
 	margin: 2% 20%;
 	height: 100px;
 	border: 3px solid;
-	border-color: white white white #008ad1;
+	border-color: white white white #008ad1; 
 	padding: 0 1%;
 }
 
@@ -605,7 +605,7 @@ ul li ul li:hover a{
 	top: 30px;
 	text-align: center;
 	margin-top: 15%;
-
+	
 }
 
 .results > div{
@@ -757,7 +757,7 @@ dl {
 }
 
 .slider__item_2 {
-	background-color:  #f2f7f9;
+	background-color:  #f2f7f9;	
 }
 
 .slider__item_3 {
@@ -809,74 +809,74 @@ dl {
 	margin: 1% 19%;
 }
 
-.praon30 {
-	float: left;
-	width: 127px;
-	height: 125px;
-	margin: 0px 20px 20px 0px;
+.praon30 {    
+	float: left;    
+	width: 127px;    
+	height: 125px;    
+	margin: 0px 20px 20px 0px;    
 	overflow: hidden;
 }
 
-.praon30 img {
-	width: 100%;
+.praon30 img {    
+	width: 100%;    
 	cursor: pointer;
 }
 
-.praon29 {
-	overflow-x: auto;
+.praon29 {    
+	overflow-x: auto;    
 	height: 150px;
 	width: 300%;
-	margin-top: 4%;
+	margin-top: 4%; 
 }
 
-.praon38prev {
-	width: 52px;
-	height: 52px;
-	background: url('images/prog-next1.png');
-	border: 0;
-	cursor: pointer;
-	z-index: 1;
-	float: left;
-	margin-right: 15px;
+.praon38prev {    
+	width: 52px;    
+	height: 52px;    
+	background: url('images/prog-next1.png');    
+	border: 0;    
+	cursor: pointer;    
+	z-index: 1;    
+	float: left;    
+	margin-right: 15px;    
 	margin-top: 198px;
 }
 
-.praon39next {
-	width: 52px;
-	height: 52px;
-	background: url('images/prog-prev1.png');
-	text-indent: -9999px;
-	border: 0;
-	cursor: pointer;
-	z-index: 1;
-	float: left;
-	margin-left: 15px;
+.praon39next {    
+	width: 52px;    
+	height: 52px;    
+	background: url('images/prog-prev1.png');    
+	text-indent: -9999px;    
+	border: 0;    
+	cursor: pointer;    
+	z-index: 1;    
+	float: left;    
+	margin-left: 15px;    
 	margin-top: 198px;
 }
-.praon23span5 {
+.praon23span5 { 
 	width: 100%;
-	float: left;
-	min-height: 1px;
+	float: left;    
+	min-height: 1px;    
 	margin-left: 30px;
 	overflow-y: auto;
 }
-.praon22span7{
-	margin: 0 20%;
-	float: left;
+.praon22span7{   
+	margin: 0 20%; 
+	float: left;    
 	overflow: hidden;
 }
 
-.praon28 {
-	float: left;
-	width: 560px;
+.praon28 {    
+	float: left; 
+	width: 560px;    
 	height: 442px;
 }
 
-.praon28 img {
+.praon28 img {    
 	width: 100%;
 }
 
-.praongallery {
+.praongallery {    
 	overflow: hidden;
 }
 
@@ -910,7 +910,7 @@ dl {
 .img_position{
 	float: left;
 	width: 37%;
-	padding: 0 10px 10px 0;
+	padding: 0 10px 10px 0;	
 }
 
 .text_position > p{
@@ -956,8 +956,8 @@ dl {
 }
 
 
-@media only screen and (max-width: 768px){
-
+@media (max-width: 768px){
+	
 	*{
 		margin: 0;
 		padding: 0;
@@ -1044,14 +1044,14 @@ dl {
 		font-weight: bold;
 		text-transform: uppercase;
 		grid-gap: 5% 5%;
-		justify-content: center;
-
+		justify-content: center;	
+		
 	}
 
 	.fa_1{
 		position: relative;
 		height: auto;
-		border: 1px solid #008ad1;
+		border: 1px solid #008ad1; 
 
 	}
 
@@ -1080,38 +1080,38 @@ dl {
 		padding: 0 0;
 	}
 
-	.praon22span7{
-		margin: 0 5%;
+	.praon22span7{   
+		margin: 0 5%; 
 		width: 90%;
-		float: left;
+		float: left;    
 		overflow: hidden;
 		height: 170px;
 	}
 
-	.praon38prev {
-		width: 32px;
-		height: 32px;
-		background: url('images/chevron_left_round-48_45771.png');
-		cursor: pointer;
-		z-index: 1;
-		float: left;
+	.praon38prev {    
+		width: 32px;    
+		height: 32px;    
+		background: url('images/chevron_left_round-48_45771.png');    
+		cursor: pointer;    
+		z-index: 1;    
+		float: left;    
 		margin-top: 65px;
 	}
 
-	.praon39next {
-		width: 32px;
-		height: 32px;
-		background: url('images/chevron_right_round-48_46769.png');
-		cursor: pointer;
-		z-index: 1;
-		float: right;
+	.praon39next {    
+		width: 32px;    
+		height: 32px;    
+		background: url('images/chevron_right_round-48_46769.png');    
+		cursor: pointer;    
+		z-index: 1;    
+		float: right;    
 		margin-top: 65px;
 		margin-right: 8px;
 	}
 
 	.praon28{
-		float: left;
-		width: 67%;
+		float: left; 
+		width: 67%;    
 		padding: 0 0;
 		height: 210px;
 	}
@@ -1122,24 +1122,24 @@ dl {
 	}
 
 
-	.praon29 {
-		margin: 0 5%;
-		overflow-y: auto;
+	.praon29 {   
+		margin: 0 5%; 
+		overflow-y: auto;    
 		height: 130px;
 		width: 80%;
-		margin-top: 4%;
+		margin-top: 4%; 
 	}
 
 
-	.praon30 {
-		float: left;
-		width: 65px;
-		height: 70px;
-		margin: 0px 10px 10px 0px;
+	.praon30 {    
+		float: left;    
+		width: 65px;    
+		height: 70px;    
+		margin: 0px 10px 10px 0px;    
 	}
 
-	.praon30 img {
-		width: 100%;
+	.praon30 img {    
+		width: 100%;    
 		cursor: pointer;
 	}
 
@@ -1147,7 +1147,7 @@ dl {
 		margin: 1% 5%;
 		font-size: 18px;
 		width: 90%;
-		height: 40vh;
+		height: auto;
 	}
 
 	.contacts  p > span{
@@ -1401,12 +1401,12 @@ dl {
 
 	.timetable{
 		margin: 1% 5%;
-		width: 95%;
+		width: 95%; 
 	}
 
 	.timetable > img{
 		height: 250px;
-		width: 95%;
+		width: 95%; 
 	}
 
 	.artical_content_ad{
@@ -1414,7 +1414,7 @@ dl {
 		height:auto;
 		min-height: 70px;
 		border: 3px solid;
-		border-color: white white white #008ad1;
+		border-color: white white white #008ad1; 
 		padding: 1% 2%;
 	}
 
@@ -1439,7 +1439,7 @@ dl {
 		text-align: justify;
 	}
 
-
+	
 	.text_content{
 		margin: 0 5%;
 		font-size: 15px;
@@ -1514,7 +1514,7 @@ dl {
 	}
 
 	.slider__item_testimonial {
-
+		
 	}
 
 	.slider__item_img {
@@ -1539,13 +1539,13 @@ dl {
 	}
 
 	.slider__item_text, .slider__item_post{
-
+		
 	}
 
 	.slider__control {
 		width: 40px;
 		height: 35px;
-
+	
 	}
 
 
@@ -1577,7 +1577,8 @@ dl {
 		text-decoration: none;
 		font-size: 16px;
 		font-weight: 300;
-		padding: 0;
+		padding: 0; 
+		margin-left: 5%;
 		justify-content: center;
 	}
 
@@ -1644,7 +1645,7 @@ dl {
 		top: 30px;
 		text-align: center;
 		margin-top: 15%;
-
+		
 	}
 
 	.results > div{
@@ -1658,3 +1659,6 @@ dl {
 	}
 
 }
+
+
+
