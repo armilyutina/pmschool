@@ -806,6 +806,7 @@ dl {
 
 .slider__item_text{
 	height: auto;
+	float: right;
 }
 
 
