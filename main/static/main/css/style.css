@@ -748,8 +748,8 @@ dl {
 	text-align: center;
 	display: flex;
 	display: inline-block;
-	height: 270px;
-	max-width: 270px;
+	height: 290px;
+	max-width: 260px;
 }
 
 .slider__item_1 {
@@ -792,7 +792,7 @@ dl {
 .slider__item_img {
 	flex: 0 0 80px;
 	height: 330px;
-	min-width: 270px;
+	min-width: 260px;
 }
 
 .slider__item_testimonial {
@@ -807,12 +807,12 @@ dl {
 .slider__item_text{
 	height: auto;
 	text-align: justify;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .slider__item_name{
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 24px;
 }
 
 .praongallery{
