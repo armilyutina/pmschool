@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
   {%  block content %}
-    
+
     <script src="{% static 'main/js/script.js' %}"></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 
@@ -12,15 +12,15 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
-    
-        
+
+
         <div class="title">Преподаватели</div>
         <div class="teachers">
             <div class="text_main_teacher">
               Цель школы - подготовить будущих абитуриентов к поступлению с хорошей академической базой по техническим предметам. Мы учим не только решать задачи, мы учим нестандартно мыслить. Подход к обучению наших учащихся был сформирован на протяжении всего существования школы. Выпускники ФМШ имеют высокий уровень знаний и хорошо подготовлены к самостоятельной учебной деятельности.  ФМШ МАИ - лучшее место для подготовки к сдаче ЕГЭ. Мы привлекаем к работе в Центре лучших студентов МАИ, которые делятся  своим опытом.
               <br /><br />
               <p class="pre_title">Директор ФМШ МАИ, Елена Александровна Пегачкова</p>
-            </div> 
+            </div>
 
             <div class="photo_title_teachers">
 
@@ -28,7 +28,7 @@
 
             </div>
 
-        </div>    
+        </div>
 
         <div class="title">Математика</div>
             <div class="slider">
@@ -43,13 +43,30 @@
               <span class="slider__item_name">Бортаковский Александр Сергеевич</span>
               <span class="slider__item_post">Лектор, 11 класс</span>
               <span class="slider__item_text">
-                
+                Кандидат физико-математических наук, профессор кафедры "Математическая кибернетика" НИУ МАИ, председатель комиссии
               </span>
             </span>
           </div>
         </div>
-        
-        
+
+        <div class="slider__item slider__item_1">
+          <div class="slider__item_inner">
+            <span class="slider__item_img">
+              <img class="slider__item_photo" src="{% static 'main/images/23.jpg'%}" alt="">
+            </span>
+            <span class="slider__item_testimonial">
+              <span class="slider__item_name">Пегачкова Елена Александровна</span>
+              <span class="slider__item_post">Руководитель секции</span>
+              <span class="slider__item_text">
+                Кандидат физико-математических наук, доцент кафедры "Математическая кибернетика" НИУ МАИ
+
+              </span>
+            </span>
+          </div>
+        </div>
+
+
+
         <div class="slider__item slider__item_3">
           <div class="slider__item_inner">
             <span class="slider__item_img">
@@ -60,7 +77,7 @@
               <span class="slider__item_name">Казбеков Борис Валентинович </span>
               <span class="slider__item_post">Лектор, 10 класс</span>
               <span class="slider__item_text">
-                
+
               </span>
             </span>
 
@@ -77,11 +94,11 @@
               <span class="slider__item_name">Чернобельский Михаил Давидович</span>
               <span class="slider__item_post">Лектор, дистанционное обучение</span>
               <span class="slider__item_text">
-                
+
               </span>
             </span>
 
-            
+
           </div>
         </div>
 
@@ -94,7 +111,9 @@
               <span class="slider__item_name">Шарипова Тамара Ильгизовна</span>
               <span class="slider__item_post">Лектор, 10 класс</span>
               <span class="slider__item_text">
-                
+                Специалист технических наук, прошла профессиональную переподготовку по программе "Профессиональные основы педагогической деятельности", сотрудница НИИСИ РАН, авторка ряда научных работ посвящённых моделям аниматов, лекторка математики в вечерней Физико-математической школе МАИ.
+Опыт воспитательской деятельности старших классов в интеренате, преподавательской деятельности в школе и университете в разных формах взаимодействия с обучающимися.
+
               </span>
             </span>
           </div>
@@ -120,12 +139,12 @@
               <span class="slider__item_name">Рахчев Дмитрий Алексеевич</span>
               <span class="slider__item_post">Лектор, 10 класс</span>
               <span class="slider__item_text">
-               
+
               </span>
             </span>
 
 
-            
+
 
           </div>
         </div>
@@ -136,14 +155,13 @@
             </span>
             <span class="slider__item_testimonial">
               <span class="slider__item_name">Гиголо Антон Иосифович</span>
-              <span class="slider__item_post"> Лектор, 11 класс</span>
+              <span class="slider__item_post">Руководитель секции</span>
               <span class="slider__item_text">
                     Кандидат технических наук, доцент кафедры «Радиофизики, антенн и
-микроволновой техники» МАИ (НИУ), член Федеральной комиссии
+микроволновой техники» НИУ МАИ, член Федеральной комиссии
 разработчиков ЕГЭ по физики, заместитель председателя предметной
 комиссии ЕГЭ по физике Москвы, учитель физики высшей квалификационной
-категории, руководитель секции физики в вечерней Физико-математической
-школе МАИ.
+категории.
               </span>
             </span>
           </div>
@@ -154,7 +172,7 @@
     <a class="slider__control slider__control_next" href="#" role="button"></a>
   </div>
 </div>
-        
+
 
         <div class="title">Информатика</div>
  <div class="slider_two">
@@ -182,7 +200,7 @@
               <span class="slider__item_name">Титенина Анастасия Игоревна </span>
               <span class="slider__item_post">Лектор, 10 и 11 классы</span>
               <span class="slider__item_text">
-                
+
               </span>
             </span>
           </div>
@@ -193,13 +211,13 @@
 </div>
 </div>
 
-        <div class="title">Русский язык и литература</div> 
+        <div class="title">Русский язык и литература</div>
     <div class="slider-three">
     <div class="slider__wrapper">
       <div class="slider__items">
         <div class="slider__item slider__item_1">
           <div class="slider__item_inner">
-    
+
             <span class="slider__item_img">
               <img class="slider__item_photo" src="{% static 'main/images/003.jpg'%}" alt="">
             </span>
@@ -208,11 +226,11 @@
               <span class="slider__item_name">Якубовская Жанна Васильевна</span>
               <span class="slider__item_post">Лектор, 10 и 11 классы</span>
               <span class="slider__item_text">
-                
+
               </span>
             </span>
 
-           
+
           </div>
         </div>
         <a class="slider__control slider__control_prev" href="#" role="button"></a>
