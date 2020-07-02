@@ -749,7 +749,7 @@ dl {
 	display: flex;
 	display: inline-block;
 	height: 270px;
-	max-width: 290px;
+	max-width: 270px;
 }
 
 .slider__item_1 {
@@ -792,7 +792,7 @@ dl {
 .slider__item_img {
 	flex: 0 0 80px;
 	height: 330px;
-	min-width: 280px;
+	min-width: 270px;
 }
 
 .slider__item_testimonial {
@@ -807,8 +807,13 @@ dl {
 .slider__item_text{
 	height: auto;
 	text-align: justify;
+	font-size: 16px;
 }
 
+.slider__item_name{
+	font-weight: bold;
+	font-size: 20px;
+}
 
 .praongallery{
 	margin: 1% 19%;
