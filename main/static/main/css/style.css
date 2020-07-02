@@ -769,7 +769,7 @@ dl {
 }
 
 .slider__item {
-	min-height: 520px;
+	min-height: 470px;
 	overflow: hidden;
 	position: relative;
 }
@@ -791,7 +791,7 @@ dl {
 
 .slider__item_img {
 	flex: 0 0 80px;
-	height: 310px;
+	height: 330px;
 	min-width: 280px;
 }
 
