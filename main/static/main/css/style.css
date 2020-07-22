@@ -660,11 +660,11 @@ dl {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	width: 40px;
+	width: 50px;
 	color: #ccc;
 	text-align: center;
 	opacity: 0.5;
-	height: 50px;
+	height: 70px;
 	transform: translateY(-50%);
 	background: #ccc;
 }
@@ -769,22 +769,22 @@ dl {
 }
 
 .slider__item {
-	min-height: 800px;
+	min-height: 850px;
 	overflow: hidden;
 	position: relative;
 }
 
 .slider__item_inner {
 	position: absolute;
-	left: 7%;
-	right: 7%;
+	left: 4%;
+	right: 4%;
 	top: 36px;
 	bottom: 36px;
 	overflow: hidden;
 	color: #fff;
 	text-align: center;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
 	flex-direction: row;
 }
@@ -800,7 +800,7 @@ dl {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-
+ 
 }
 
 
