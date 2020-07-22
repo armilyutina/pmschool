@@ -748,8 +748,8 @@ dl {
 	text-align: center;
 	display: flex;
 	display: inline-block;
-	height: 290px;
-	max-width: 260px;
+	height: 350px;
+	max-width: 340px;
 }
 
 .slider__item_1 {
@@ -769,7 +769,7 @@ dl {
 }
 
 .slider__item {
-	min-height: 470px;
+	min-height: 800px;
 	overflow: hidden;
 	position: relative;
 }
@@ -790,9 +790,9 @@ dl {
 }
 
 .slider__item_img {
-	flex: 0 0 80px;
-	height: 330px;
-	min-width: 260px;
+	flex: 0 0 100px;
+	height: 350px;
+	min-width: 340px;
 }
 
 .slider__item_testimonial {
@@ -807,12 +807,12 @@ dl {
 .slider__item_text{
 	height: auto;
 	text-align: justify;
-	font-size: 18px;
+	font-size: 20px;
 }
 
 .slider__item_name{
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 26px;
 }
 
 .praongallery{
