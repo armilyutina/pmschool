@@ -769,7 +769,7 @@ dl {
 }
 
 .slider__item {
-	min-height: 850px;
+	min-height: 600px;
 	overflow: hidden;
 	position: relative;
 }
