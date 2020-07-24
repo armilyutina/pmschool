@@ -769,15 +769,15 @@ dl {
 }
 
 .slider__item {
-	min-height: 600px;
+	min-height: 550px;
 	overflow: hidden;
 	position: relative;
 }
 
 .slider__item_inner {
 	position: absolute;
-	left: 7%;
-	right: 7%;
+	left: 4%;
+	right: 4%;
 	top: 36px;
 	bottom: 36px;
 	overflow: hidden;
@@ -785,7 +785,6 @@ dl {
 	text-align: center;
 	display: flex;
 	align-items: flex-start;
-	align-content: space-between;
 	justify-content: center;
 	flex-direction: row;
 }
@@ -801,7 +800,7 @@ dl {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	padding: 20px 20px;
+	padding: 20px 15px;
  
 }
 
@@ -809,7 +808,7 @@ dl {
 .slider__item_text{
 	height: auto;
 	text-align: justify;
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .slider__item_name{
