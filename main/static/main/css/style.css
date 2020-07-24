@@ -726,7 +726,7 @@ dl {
 .slider__indicators li {
 	box-sizing: content-box;
 	flex: 0 1 auto;
-	width: 30px;
+	width: 20px;
 	height: 4px;
 	margin-right: 3px;
 	margin-left: 3px;
@@ -785,6 +785,7 @@ dl {
 	text-align: center;
 	display: flex;
 	align-items: flex-start;
+	align-content: space-between;
 	justify-content: center;
 	flex-direction: row;
 }
@@ -1520,7 +1521,7 @@ dl {
 	}
 
 	.slider__item {
-		height: 290px;
+		height: 220px;
 	}
 
 	.slider__item_inner {
