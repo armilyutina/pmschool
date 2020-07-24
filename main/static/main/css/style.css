@@ -660,11 +660,11 @@ dl {
 	display: none;
 	align-items: center;
 	justify-content: center;
-	width: 50px;
+	width: 36px;
 	color: #ccc;
 	text-align: center;
 	opacity: 0.5;
-	height: 70px;
+	height: 50px;
 	transform: translateY(-50%);
 	background: #ccc;
 }
@@ -726,7 +726,7 @@ dl {
 .slider__indicators li {
 	box-sizing: content-box;
 	flex: 0 1 auto;
-	width: 20px;
+	width: 30px;
 	height: 4px;
 	margin-right: 3px;
 	margin-left: 3px;
@@ -776,8 +776,8 @@ dl {
 
 .slider__item_inner {
 	position: absolute;
-	left: 4%;
-	right: 4%;
+	left: 7%;
+	right: 7%;
 	top: 36px;
 	bottom: 36px;
 	overflow: hidden;
@@ -801,6 +801,7 @@ dl {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 20px 20px;
  
 }
 
