@@ -748,8 +748,8 @@ dl {
 	text-align: center;
 	display: flex;
 	display: inline-block;
-	height: 350px;
-	max-width: 340px;
+	height: 320px;
+	max-width: 300px;
 }
 
 .slider__item_1 {
@@ -791,8 +791,8 @@ dl {
 
 .slider__item_img {
 	flex: 0 0 100px;
-	height: 350px;
-	min-width: 340px;
+	height: 320px;
+	min-width: 300px;
 }
 
 .slider__item_testimonial {
